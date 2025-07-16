@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   imports =
@@ -80,8 +80,8 @@
     git
     steam
     nerd-fonts.jetbrains-mono
-    # inputs.astal.packages.${pkgs.system}.default
-    # inputs.ags.packages.${pkgs.system}.default
+    inputs.astal.packages.${pkgs.system}.astal4
+    inputs.ags.packages.${pkgs.system}.default
     lazygit
   #  wget
   ];
