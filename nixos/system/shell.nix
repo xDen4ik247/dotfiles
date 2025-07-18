@@ -12,4 +12,7 @@
     '';
   };
   users.defaultUserShell = pkgs.zsh;
+  environment.systemPackages = [
+    pkgs.nerd-fonts.jetbrains-mono
+  ];
 }

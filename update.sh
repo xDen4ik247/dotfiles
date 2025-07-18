@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sudo cp /etc/nixos/hardware-configuration.nix /$HOME/.dotfiles/system/nixos
+sudo cp /etc/nixos/hardware-configuration.nix /$HOME/.dotfiles/nixos
 sudo rm -rf /etc/nixos/*
-sudo cp -r $HOME/.dotfiles/system/nixos/* /etc/nixos/
+sudo cp -r $HOME/.dotfiles/nixos/* /etc/nixos/
 sudo nixos-rebuild switch --flake /etc/nixos
 
 rm -rf $HOME/.config/hypr/*

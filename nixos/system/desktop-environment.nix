@@ -24,5 +24,7 @@
     (pkgs.sddm-astronaut.override {
       embeddedTheme = "hyprland_kath";
      })
+    pkgs.kitty
+    pkgs.fuzzel
   ];
 }

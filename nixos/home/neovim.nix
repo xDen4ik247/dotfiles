@@ -1,6 +1,10 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, inputs, ... }:
 
 {
+  imports = [
+    inputs.nvf.nixosModules.default
+  ];
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;

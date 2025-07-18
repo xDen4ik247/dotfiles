@@ -16,4 +16,7 @@
       };
     };
   };
+  environment.systemPackages = [
+    pkgs.efibootmgr
+  ];
 }
